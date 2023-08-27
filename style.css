@@ -1,0 +1,136 @@
+main{
+    margin-top: 100px;
+    margin-left:800px;
+    width:1000px;
+    height:800px;
+}
+.game{
+    position: relative;
+    top:50px;left:380px;
+    font-size:30px;
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#who-play{
+    display:flex;
+    position: relative;
+        top:-670px; left:350px;
+        font-size:40px;
+}
+.dice{
+    position: relative;
+    left:370px;top:-200px;
+}
+.name{
+    position: relative;
+    top:240px; left:80px;
+    font-size:50px;
+}
+.score{
+    position: relative;
+    top:230px;left:100px;
+    font-size:60px;
+}
+.name1{
+    position: relative;
+    left:400px;
+    left:700px;
+    font-size: 50px;
+}
+
+.score1{
+    position: relative;
+    left:720px;top:-5px;
+    font-size: 60px;
+}
+
+
+.player--active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player--active .name {
+    font-weight: 700;
+}
+
+.player--active .score {
+    font-weight: 400;
+}
+
+.player--active .current {
+    opacity: 1;
+}
+
+.current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #ddd;
+}
+
+.current-score {
+    font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #444;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.2s;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 0.7rem 2.5rem;
+    border-radius: 50rem;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter {
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.btn--new {
+    position: relative;
+    left:480px; top:-100px;
+    
+}
+
+.btn--roll {
+    position: relative;
+    top:-200px;left:280px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.player--winner .name {
+    font-weight: 700;
+    color: #c7365f;
+}
+
+.hidden {
+    display: none;
+}
